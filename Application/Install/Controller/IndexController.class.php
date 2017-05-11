@@ -14,6 +14,7 @@ use Think\Storage;
 class IndexController extends Controller{
     //安装首页
     public function index(){
+        //判断是否已经安装
         if(is_file(APP_PATH . 'User/Conf/config.php')){
             // 已经安装过了 执行更新程序
             session('update',true);
@@ -24,6 +25,7 @@ class IndexController extends Controller{
         if(Storage::has('./Data/install.lock')){
             $this->error($msg);
         }
+        //调用视图
         $this->display();
     }
 

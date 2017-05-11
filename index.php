@@ -21,6 +21,9 @@ define('APP_DEBUG', true );
  */
 define ( 'APP_PATH', './Application/' );
 
+/**
+ * 判断是否已经安装，没有安装就跳转到install.php
+ */
 if(!is_file(APP_PATH . 'User/Conf/config.php')){
 	header('Location: ./install.php');
 	exit;
