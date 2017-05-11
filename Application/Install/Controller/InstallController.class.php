@@ -15,6 +15,7 @@ use Think\Storage;
 class InstallController extends Controller{
 
     protected function _initialize(){
+        //判断是否已经安装过
         if(Storage::has('./Data/install.lock')){
             $this->error('已经成功安装了OneThink，请不要重复安装!');
         }

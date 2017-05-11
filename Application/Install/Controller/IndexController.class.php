@@ -33,6 +33,7 @@ class IndexController extends Controller{
     public function complete(){
         $step = session('step');
 
+        //Controller类的redirect方法可以实现页面的重定向功能
         if(!$step){
             $this->redirect('index');
         } elseif($step != 3) {
