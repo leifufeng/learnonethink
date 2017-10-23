@@ -1,2 +1,6 @@
+__construct()和__initialize()
+ThinkPHP中的__initialize()和类的构造函数__construct()
+http://www.thinkphp.cn/code/367.html
+
 ThinkPHP中redirect用法分析
 http://www.jb51.net/article/58214.htm
