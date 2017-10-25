@@ -6,3 +6,9 @@ ThinkPHP中redirect用法分析
 http://www.jb51.net/article/58214.htm
 
 ThinkPHP中的数据缓存：S方法、F方法
+
+C方法：操作配置
+
+A方法：实例化控制器
+
+U方法：用于URL的动态生成
